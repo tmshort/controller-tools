@@ -19,7 +19,7 @@ package markers_test
 import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	. "sigs.k8s.io/controller-tools/pkg/markers"
+	. "github.com/tmshort/controller-tools/pkg/markers"
 )
 
 type fieldPath struct {

@@ -19,7 +19,7 @@ package help
 import (
 	"strings"
 
-	"sigs.k8s.io/controller-tools/pkg/markers"
+	"github.com/tmshort/controller-tools/pkg/markers"
 )
 
 // SortGroup knows how to sort and group marker definitions.

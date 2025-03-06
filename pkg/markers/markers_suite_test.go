@@ -22,8 +22,8 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	pkgstest "golang.org/x/tools/go/packages/packagestest"
-	"sigs.k8s.io/controller-tools/pkg/loader"
-	testloader "sigs.k8s.io/controller-tools/pkg/loader/testutils"
+	"github.com/tmshort/controller-tools/pkg/loader"
+	testloader "github.com/tmshort/controller-tools/pkg/loader/testutils"
 )
 
 func TestMarkers(t *testing.T) {
@@ -39,7 +39,7 @@ var exported *pkgstest.Exported
 var _ = BeforeSuite(func() {
 	modules := []pkgstest.Module{
 		{
-			Name: "sigs.k8s.io/controller-tools/pkg/markers/testdata",
+			Name: "github.com/tmshort/controller-tools/pkg/markers/testdata",
 			Files: map[string]interface{}{
 				"file.go": `
 					package testdata
@@ -145,7 +145,7 @@ var _ = BeforeSuite(func() {
 	By("setting up the fake packages")
 	var pkgs []*loader.Package
 	var err error
-	pkgs, exported, err = testloader.LoadFakeRoots(pkgstest.Modules, modules, "sigs.k8s.io/controller-tools/pkg/markers/testdata")
+	pkgs, exported, err = testloader.LoadFakeRoots(pkgstest.Modules, modules, "github.com/tmshort/controller-tools/pkg/markers/testdata")
 	Expect(err).NotTo(HaveOccurred())
 	Expect(pkgs).To(HaveLen(1))
 

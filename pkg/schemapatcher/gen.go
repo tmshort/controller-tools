@@ -26,12 +26,12 @@ import (
 	"k8s.io/apimachinery/pkg/api/equality"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	crdgen "sigs.k8s.io/controller-tools/pkg/crd"
-	crdmarkers "sigs.k8s.io/controller-tools/pkg/crd/markers"
-	"sigs.k8s.io/controller-tools/pkg/genall"
-	"sigs.k8s.io/controller-tools/pkg/loader"
-	"sigs.k8s.io/controller-tools/pkg/markers"
-	yamlop "sigs.k8s.io/controller-tools/pkg/schemapatcher/internal/yaml"
+	crdgen "github.com/tmshort/controller-tools/pkg/crd"
+	crdmarkers "github.com/tmshort/controller-tools/pkg/crd/markers"
+	"github.com/tmshort/controller-tools/pkg/genall"
+	"github.com/tmshort/controller-tools/pkg/loader"
+	"github.com/tmshort/controller-tools/pkg/markers"
+	yamlop "github.com/tmshort/controller-tools/pkg/schemapatcher/internal/yaml"
 	kyaml "sigs.k8s.io/yaml"
 )
 

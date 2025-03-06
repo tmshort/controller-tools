@@ -30,7 +30,7 @@ import (
 
 	"golang.org/x/tools/go/packages"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"sigs.k8s.io/controller-tools/pkg/loader/quoted"
+	"github.com/tmshort/controller-tools/pkg/loader/quoted"
 )
 
 // Much of this is strongly inspired by the contents of go/packages,

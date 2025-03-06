@@ -24,11 +24,11 @@ import (
 	"github.com/google/go-cmp/cmp"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"sigs.k8s.io/controller-tools/pkg/crd"
-	"sigs.k8s.io/controller-tools/pkg/deepcopy"
-	"sigs.k8s.io/controller-tools/pkg/genall"
-	"sigs.k8s.io/controller-tools/pkg/loader"
-	"sigs.k8s.io/controller-tools/pkg/markers"
+	"github.com/tmshort/controller-tools/pkg/crd"
+	"github.com/tmshort/controller-tools/pkg/deepcopy"
+	"github.com/tmshort/controller-tools/pkg/genall"
+	"github.com/tmshort/controller-tools/pkg/loader"
+	"github.com/tmshort/controller-tools/pkg/markers"
 )
 
 type outputToMap map[string]*outputFile

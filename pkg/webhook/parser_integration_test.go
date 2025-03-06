@@ -25,10 +25,10 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	admissionregv1 "k8s.io/api/admissionregistration/v1"
-	"sigs.k8s.io/controller-tools/pkg/genall"
-	"sigs.k8s.io/controller-tools/pkg/loader"
-	"sigs.k8s.io/controller-tools/pkg/markers"
-	"sigs.k8s.io/controller-tools/pkg/webhook"
+	"github.com/tmshort/controller-tools/pkg/genall"
+	"github.com/tmshort/controller-tools/pkg/loader"
+	"github.com/tmshort/controller-tools/pkg/markers"
+	"github.com/tmshort/controller-tools/pkg/webhook"
 	"sigs.k8s.io/yaml"
 )
 

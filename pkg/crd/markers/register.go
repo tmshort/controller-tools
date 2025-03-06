@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"sigs.k8s.io/controller-tools/pkg/markers"
+	"github.com/tmshort/controller-tools/pkg/markers"
 )
 
 type definitionWithHelp struct {

@@ -5,7 +5,7 @@ import (
 	"io"
 
 	"github.com/fatih/color"
-	"sigs.k8s.io/controller-tools/pkg/genall/help"
+	"github.com/tmshort/controller-tools/pkg/genall/help"
 )
 
 var (

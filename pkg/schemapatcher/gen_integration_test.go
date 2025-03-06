@@ -23,8 +23,8 @@ import (
 	"github.com/google/go-cmp/cmp"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"sigs.k8s.io/controller-tools/pkg/genall"
-	. "sigs.k8s.io/controller-tools/pkg/schemapatcher"
+	"github.com/tmshort/controller-tools/pkg/genall"
+	. "github.com/tmshort/controller-tools/pkg/schemapatcher"
 )
 
 var _ = Describe("CRD Patching From Parsing to Editing", func() {
